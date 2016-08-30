@@ -30,25 +30,21 @@
         background-color: #AF7AC5;
         width: 200px;
         height: 200px;
-        float: left; 
+        z-index: 1;
+        margin: 50px 100px 230px 100px;
         
     }
     
     .greenbox {
         background-color: greenyellow;
         width:300px;
-        height:100px;
-        float:right;
-    }
-    .floatleft {
-     float: left;  
+        height:200px;
+        z-index: 2;
         
+      
     }
     
-    .clear {
-        clear:both;
-    }
-    
+       
     
     
 </style>
@@ -62,8 +58,8 @@
     <div class="greenbox">
         <p id="green" class="large">This is some more text.</p>
     </div>
-    <div class="clear"></div>
-<p class="floatleft"> The third <span class="underline large bold"> word </span>in this paragraph is underscore </p>
+    
+    <p > The third <span class="underline large bold"> word </span>in this paragraph is underscore </p>
 
 </body>
 </html>
