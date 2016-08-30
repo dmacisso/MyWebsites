@@ -26,16 +26,44 @@
         font-weight: bold;
     }
 
+    .purplebox {
+        background-color: #AF7AC5;
+        width: 200px;
+        height: 200px;
+        float: left; 
+        
+    }
+    
+    .greenbox {
+        background-color: greenyellow;
+        width:300px;
+        height:100px;
+        float:right;
+    }
+    .floatleft {
+     float: left;  
+        
+    }
+    
+    .clear {
+        clear:both;
+    }
+    
+    
+    
 </style>
 </head>
 
 <body>
-
- 
- <p  class="large">This is some text. </p>
- <p id="green" class="large">This is some mote text. </p>
-
-<p> The third <span class="underline large bold"> word </span>in this paragraph is underscore </p>
+    <div class="purplebox">
+        <p  class="large">This is some text. </p>
+    </div >
+    
+    <div class="greenbox">
+        <p id="green" class="large">This is some more text.</p>
+    </div>
+    <div class="clear"></div>
+<p class="floatleft"> The third <span class="underline large bold"> word </span>in this paragraph is underscore </p>
 
 </body>
 </html>
