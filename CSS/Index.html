@@ -26,24 +26,30 @@
         font-weight: bold;
     }
 
-    .purplebox {
-        background-color: #AF7AC5;
-        width: 200px;
-        height: 200px;
-        z-index: 1;
-        margin: 50px 100px 230px 100px;
+    .redbox {
+        background-color: red;
+        border: 5px black solid;
         
     }
     
     .greenbox {
-        background-color: greenyellow;
-        width:300px;
-        height:200px;
-        z-index: 2;
-        
-      
+        background-color: green; 
+        border-radius: 50px;
+          
+                    
     }
     
+    .bluebox {
+      background-color: blue;
+    border: 5px black solid;
+    }
+    
+    div {
+        height: 100px;
+        width: 100px;
+        float: left;
+        margin: 20px;
+        }
        
     
     
@@ -51,15 +57,17 @@
 </head>
 
 <body>
-    <div class="purplebox">
-        <p  class="large">This is some text. </p>
+    <div class="redbox">
+        <p>This is my red div</p>
     </div >
     
-    <div class="greenbox">
-        <p id="green" class="large">This is some more text.</p>
-    </div>
+    <div class ="bluebox">
+        <p>This is my blue box</p>
+        </div>
     
-    <p > The third <span class="underline large bold"> word </span>in this paragraph is underscore </p>
-
+    <div class="greenbox">
+        <p >This is my green div.</p>
+    </div>
+        
 </body>
 </html>
