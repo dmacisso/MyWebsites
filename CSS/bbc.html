@@ -11,11 +11,12 @@
         body {
             margin:0;
             font-family: arial,helvetica,sans-serif;
+            line-height: 16px;
                     }
         #topbar {
             background-color:#7B0000;
             width:100%;
-            height:40px;
+            height:46px;
             }
         
         .fixedwidth {
@@ -24,27 +25,245 @@
                        
         }
         #logodiv {
-            padding-top: 5px;
             float: left;
             border-right: 1px solid #990000;
-            padding-right: 10px;
+            padding: 5px 10px 0 10px;
             }
         #signindiv {
-            font-weight: bold;
-            font-size: 0.9em;
             border-right: 1px solid #990000;
-            width: 200px;
-            height: 100%;          
+            border-left: 1px solid #990000;
+            font-weight: bold;
+            padding: 0 80px 0 10px;
+            font-size: 0.9em;
+            float: left;
+            height: 40px;
         }
         
         signindiv img {
             position: relative;
+          }  
+        
+        #topmenudiv {
+            float: left;
+            
         }
         
-        signindiv p {
-            margin-left: 20px;
+        #topmenudiv ul {
+            margin-top: 0;
+            padding: 0;
+        }
+        
+        #topmenudiv li{
+            list-style: none;
+            color: white;
+            font-weight: bold;
+            font-size: 0.9em;
+            border-right: 1px solid #990000;
+            height: 100%;
+            padding: 10px 20px 12px 20px;
+            float: left;
             }
-   
+        #searchdiv {
+            float: left;
+            padding: 8px;           
+        }
+        
+        #searchdiv input {
+            border: none;
+            height: 25px;
+            padding-left: 10px;
+            background-image: url("images/maglass.PNG");
+            background-repeat: no-repeat;
+            background-position: right center;
+            }
+        
+        .break {
+            clear: none;
+        }
+        
+        #newsbar {
+            background-color:#990000;
+            width:100%;
+            height:90px;
+            color: white;
+            }
+        #newsbar p {
+            margin: 0;
+            padding:15px;
+            padding-left: 5px;
+            
+        }
+        
+        #newsheader {
+            font-size: 3em;             
+        }
+        
+        #uk {
+            font-size: 0.7em;
+            padding-left: 20px;
+        }
+        
+        #rss {
+            float: right;
+            color: white;
+            top -17px;
+            }
+        
+        #rss img {
+            height: 16px;
+            position: relative;
+            top: 2px;            
+            }
+        
+        #topicmenu {
+            
+        }
+        
+        #topicmenu ul{
+            background-color: black;
+            color: white;
+            padding: 7px 0 0 0;
+            margin: 0;
+            height: 24px;
+            width:  100%;
+            position: relative;
+            top: -1;
+            
+        }
+        
+        #topicmenu li {
+            list-style: none;
+            font-size: 0.8em;
+            border-right: 1px solid #990000;
+            float: left;
+            padding: 0 6px 0 6px;
+        }
+        
+        .selected {
+            background-color: #EDEDED;
+            color: #666666;
+            height: 20px;
+            position: relative;
+            top -4;
+            padding: 2x !important;
+            }
+        
+        
+        #content {
+            width:100%;
+            color: #535353;
+            font-size: 0.75em;            
+        }
+        
+        #content h1{
+            color:#1f4f82;
+            font-size: 2.5em;
+        }
+        
+        .date {
+            font-weight: bold;
+        }
+
+        #pollimage {
+            float: left;
+        }
+        
+        .newsitem {
+            position: relative;
+            left: 10px;
+            top: -15px;
+            width: 280px;
+            float: left;
+            font-size: 1.1em;
+        }
+        
+        .newsitem a {
+            color: #1F4F82;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .video {
+            background-image: url("images/triange.PNG");
+            background-repeat: no-repeat;
+            background-position: left center;            
+            padding-left: 30px;
+        }
+        
+        .links {
+            line-height: 1.5em;
+        }
+        
+         .sound {
+            background-image: url("images/sound.PNG");
+            background-repeat: no-repeat;
+            background-position: left center;            
+            padding-left: 30px;
+        }
+        #watchlisten{
+            background-color: #eeeeee;
+            float: right;
+            width: 368px;
+            position: relative;
+            top: -60px;
+        }
+        
+        #watchlisten h2{
+            color: #505050;
+            margin: 10px 0 10px 10px;
+            font-size: 1.8em;
+        }
+        .boxes {
+            float: right;
+            margin: 20px 10px 0 0;
+        }
+        
+        .leftarrow {
+            float: left;
+            border-right: 1px solid white;
+            
+        }
+        .wlblock {
+            float: left;
+            background-color: #D1700E;
+            width 193px;
+            height: 155px;
+            border-right: 1px solid white;
+        }
+        
+        .wlblock a{
+            color: white;
+        }
+        
+        .wlblock p{
+        }
+        
+        #watchlist ul{
+            margin: 0;
+            padding: 0 10px 10px 10px; 
+        }
+        
+        #watchlisten li{
+            list-style: none;
+            background-image: url("images/live.PNG");
+            background-repeat: no-repeat;
+            background-position: left center;   
+            padding: 10px 0 10px 50px;
+            font-size: 1.6em;
+        }
+        
+        .bb {
+            border-bottom: 1px solid #dddddd;
+        }
+        
+                       
+        
     </style>    
 </head>
 
@@ -61,16 +280,108 @@
           <div id="signindiv">
               <p> <img src="images/signin.PNG"> </p>
           </div>
-           
-  </div>
+          
+          <div id="topmenudiv">
+              <ul>
+                  <li>News</li>
+                  <li>Sport</li>
+                  <li>Weather</li>
+                  <li>IPlayer</li>
+                  <li>TV</li>
+                  <li>Radio</li>
+                  <li>More...</li>
+                               
+              </ul>
+          </div>
+          <div id="searchdiv">
+              <input type="text" placeholder="Search" />                              
+          </div>
+         </div>
+    </div>
+    <div class="break"></div>
+                    
+      <div id="newsbar">
+      
+          <div class="fixedwidth">
+              <p id="newsheader">NEWS<span id="uk">UK</span></p>
+                  
+              <div id="rss">
+                  RSS <img src="images/RSS.PNG">                  
+              </div>
         
-  </div>
-        
+                        <div class="break"></div>       
+                                                                        
+                  <div id="topicmenu">
+                    <ul>
+                        <li>Home</li>
+                        <li class="selected">UK</li>
+                        <li>England</li>
+                        <li>N.Irland</li>
+                        <li>Scotland</li>
+                        <li>Wales</li>
+                        <li>Business</li>
+                        <li>Politics</li>
+                        <li>Health</li>
+                        <li>Education</li>
+                        <li>Sci/Environment</li>
+                        <li>Technology</li>
+                        <li style="border-right: none">Entertainment</li>
+                    </ul>                                   
+                </div> 
+              
+          </div>
+          
+    </div>
     
+    <div class="break"></div>
+              <div id="content">
+      
+          <div class="fixedwidth">
+              <p><span class="date">2 April 2014 </span>Last updated at 14:13 </p>
+              <h1>Pollution to spread across England</h1>
+              <img id="pollimage"src="images/pollution.jpg" />
+              <div class="newsitem">
+              <p>Health warnings have been issued by the government as pollution spreading across England is forecast to hit high levels. </p>
+            
+                  <p class="links"><a  class="video" href="">Why are pollution levels so high?</a><br \>
+                     <a class="video" href="">Saharan dust visible on cars</a><br />
+                     <a class="video" href="">How Saharan dust reached the UK</a><br />
+                      <a href=""></a>What will pollution do to us?</a><br />
+                      <a class="sound" href="">Air pollution a 'serious issue'</a>
+                  </p>
+              </div>
+    <div id="watchlisten">
+        <img src="images/boxes.PNG" class="boxes" />
+        <h2>Watch/Listen</h2>
+        <img src="images/leftarrow.PNG" class="leftarrow" />
+    
+        <div class="wlblock">
+            <img src="images/pic1.PNG">
+            <p><a href="">Titanic letter could fetch £100,000</a></p>           
+        </div>
+        
+        <div class="wlblock">
+            <img src="images/pic2.PNG">
+            <p><a href="">The housing estate delivering its own mail</a></p>
+            
+        </div>
+        <img src="images/rightarrow.PNG" class="rightarrow" />
+               
+        
+        <ul>
+            <li class="bb"><a href="">BBC News Channel</a></li>
+            
+            <li class="bb"><a href="">Radio 5 Live</a></li>
+            
+            <li><a href="">Osborne questioned on budget</a></li>       
+        
+        </ul>
+    
+    </div>
+                            
+         </div>
+    </div>
 </div>
-         
-
-
-
+        
 </body>
 </html>
