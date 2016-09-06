@@ -9,22 +9,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <style>
-    .blue  {
-        background-color: #89A3B6;
-        font-family: serif;
-        font-size: 150%;
-        border-radius: 20px;
-                }
-    iframe {
-        width: 400px;
-        height: 315px;
-        }
-    .floater {
+    body {
+        width: 100%;
+        font-size: 1em;
+    }
+#header  {
+    background-color: #89A3B6;
+    font-family: serif;
+    font-size: 150%;
+    border-radius: 20px;
+}
+    
+#topbar {
+  width: 95%;
+  margin: 0 auto 0 auto;
+ }
+    h2#perform {
+       margin-left: 36px;
         float: left;
     }
     
-    .center {
-        text-align: center;
+    #frog {
+        padding: 0;
+        margin-left: 425px;     
+    }
+    
+    
+    #songs {
+        float: left;
+    }
+    
+    #venue {
+        margin-left: 25em;
+          
+    }
+    
+    #venue ul{
+        list-style-type: none;
     }
     
 </style>
@@ -36,43 +57,55 @@
 
 <body>
 
-<div class=blue>
+<div id="header">
      <h1 align="center" >Macisso Brothers</h1>
     <hr />
-    </div>
-        <iframe src="https://www.youtube.com/embed/MPae3bN96V8" frameborder="0" allowfullscreen></iframe>
-<iframe  src="https://www.youtube.com/embed/aVvxa6DCXgo" frameborder="0" allowfullscreen></iframe>
-     <iframe  src="https://www.youtube.com/embed/UoM8dO9g-bE" frameborder="0" allowfullscreen></iframe>
+</div>
 
-     <h2 align="center">Performing at ..</h2>
+<div id=topbar>
+<iframe src="https://www.youtube.com/embed/MPae3bN96V8" frameborder="0" allowfullscreen></iframe>
+
+<iframe  src="https://www.youtube.com/embed/aVvxa6DCXgo" frameborder="0" allowfullscreen></iframe>
+
+<iframe  src="https://www.youtube.com/embed/UoM8dO9g-bE" frameborder="0" allowfullscreen></iframe>
+    
+<iframe src="https://www.youtube.com/embed/Rbd4r6Wk1js" frameborder="0" allowfullscreen></iframe>
+    
+<iframe  src="https://www.youtube.com/embed/vT_Htroo44E" frameborder="0" allowfullscreen></iframe>
+
+</div>
+    
+
+     <h2 id="perform">Performing at ..</h2>
+<div id="frog">    
         <form action="http://www.thefrogandturtle.com">
-       <div align="center">
-       <input type="submit" value="Frog and Turtle" />
-       </div>
-       </form>
-      <h3 align="center">Westbrook, Maine</h3>
-    <hr \>
-           
-       
+        <input type="submit" value="Frog and Turtle" />
+        </form>
+      <h3>Westbrook, Maine</h3>
+</div>          
+     <hr \>
+
       
-     <table > 
+     <table> 
        <tr align="left"><th>Artist</th><th>Lives In</th><th>Features</th><th>Links</th><th>...</th></tr>
        <tr><td>Jimmy</td><td>Westbrook,Me</td><td>Bass,Vocals</td><td><a href="https://youtu.be/Y2zrlIDnldc">Jimmy Macisso Band</a></td><td></td></tr>
        <tr><td>Tommy</td><td>Louisville,KY</td><td>Guitar,Vocals</td><td><a href="https://youtu.be/Rbd4r6Wk1js">Jackson</a></tr>
        <tr><td>Marc</td><td>Los Angeles,CA</td><td>Sax,Harp,Flute,Vocals etc</td><td><a href="http://marcmacisso.com">1. marcmacisso.com</a></td><td><a href="https://youtu.be/FZYF16sSeUQ">2.Just My Imagination</a></td></tr>
        </table>
     
-<div class="floater">   
+    
+<div id="songs">   
        <h3> Songs: </h3>
         <ol>
-        <li><u>Ring of Fire</u> - </li>
-        <li><u>Mr Inbetween</u> - </li>
-        <li><u>Get Rhythm</u> - </li>
-        <li><u>Jackson</u> - </li>
-        <li><u>I'm Sorry For You My Friend</u>- </li>
+        <li>Ring of Fire - </li>
+        <li>Mr Inbetween - </li>
+        <li>Get Rhythm - </li>
+        <li>Jackson - </li>
+        <li>I'm Sorry For You My Friend- </li>
         </ol>
 </div>
-<div align="center">
+    
+<div id="venue">
      <h3> Performing Venues: </h3>
         <ul> 
         <li><strong>Frog and Turtle</strong>, Westbrook, Maine"</li>
