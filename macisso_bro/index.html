@@ -87,16 +87,19 @@ th, td {
     }
     
 th {
-    background-color: bisque;
+    background-color: #ff9900;
 }
     
 td {
-    background-color: beige;
+    background-color: # #ffff99;
 }
     
 table {
     border-collapse: collapse;
     border-spacing: 1em;
+}
+    .break {
+    clear: both;
 }
 
     #audio1 {
@@ -104,13 +107,21 @@ table {
     }
     
     #table2 {
-        margin-left: 500px;
-     
+        margin-left: 580px;
+          
     }
-    #table2 td {
-        padding: 0;
-        margin: 0;
+    
+    #table2 td{
+         border-color: burlywood;  
     }
+    #audio1 {
+        float: left;
+    }
+    
+    #audio2 {
+        float: right;
+    }
+    
        
 </style>
     
@@ -166,7 +177,7 @@ table {
         </form>
       <h3>Portland, Maine</h3>
 </div>     
-    <div class="break"></div>
+  
 </div>
 
     <br \> <br \> <br \>
@@ -180,20 +191,31 @@ table {
 </div>
     <br /> <br /> <br />
     
-<div id=audio1>
+  <div class="break"></div>    
+    
+<div id="audio1">
     <h4>A Tear in My Beer</h4>
     <audio controls><source src="audio/TearInMyBeer-2016.mp3"/></audio> 
     <h4>A Come In Stranger</h4>
     <audio controls><source src="audio/ComeInStranger.mp3"/></audio> 
+    <h4>A Big River</h4>
+    <audio controls><source src="audio/BigRiver.mp3"/></audio> 
     
 </div>
     
-<div id=table2>
+<div id="table2">
 <table>
-         <tr><td><img src="images/marc_sax.jpg"></td><td><img src="images/jimmy.jpg"></td><td><img src="images/tomm.jpg"</td></tr>         
+         <tr><td><img src="images/marc_sax.jpg"></td><td><img src="images/tomm.jpg"</td><td><img src="images/jimmy.jpg"></td></tr>         
 </div>
 
-
+<div id="audio2">
+    <h4>Me And Mrs Jones</h4>
+    <audio controls><source src="audio/MeAndMrsJones.mp3"/></audio> 
+    <h4>Walking The Floor</h4>
+    <audio controls><source src="audio/WalkingTheFloor.mp3"></audio> 
+    <h4>A Big River</h4>
+    <audio controls><source src="audio/TenneseeStud.mp3"/></audio> 
+</div>
 
 </body>
 </html>
