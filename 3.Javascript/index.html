@@ -8,12 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 <style>
     
-#circle {
-        background-color: red;
-        height: 60px;
-        width: 60px;
-        border-radius: 30px;
-}
     
 </style>
     
@@ -22,56 +16,26 @@
 </head>
 
 <body>
+
+
+    <input id="myInput" type="text" value="test" />
     
-    <button id="textChanger">Change first div text</button>
+    <button id="stylesChanger">Change the text!</button>
     
     <div id="firstDiv">This is some test</div>
-        
-    <button id="textAppender">Append some test</button>
-    
-    <div id="secondDiv">Javascript is ...</div>
-    
-    <button id="textCreator">Create some text</button>
-    
-    <div id="mtDiv"></div>
-    <br /><br />
-    
-    
-    <button id="erase">Erase Circle</button>
-    <div id="circle"></div>
-    
    
-   
-    <script type="text/javascript">
+    
+    <script type="text/javascript">   
         
-       document.getElementById("textChanger").onclick=function() {
-           
-           document.getElementById("firstDiv").innerHTML="This is awesome!!";
-           
-       }
-   
-        document.getElementById("textAppender").onclick=function() {
-           
-           document.getElementById("secondDiv").innerHTML += "great!!";
-           
-       }
         
-        document.getElementById("textCreator").onclick=function() {
+        var newText=document.getElementById("myInput").value;
+        
+        
+        document.getElementById("stylesChanger").onclick=function() {
            
-            document.getElementById("mtDiv").innerHTML="<ul><li>Cat</li><li>Dog</li></ul>";
-           
-       }
-
-        document.getElementById("circle").onclick=function() {
-           
-           document.getElementById("circle").style.display="none"
+        document.getElementById("firstDiv").innerHTML=newText;
+        
         }
-        
-         document.getElementById("erase").onclick=function() {
-           
-           document.getElementById("circle").style.display="none"
-        }
-        
         
     </script>
     
