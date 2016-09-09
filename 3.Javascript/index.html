@@ -23,7 +23,9 @@
 
 <body>
     
-    <button id="textChanger">Change first div text</button>
+    <input id="myInput" type="text" value="test" />
+    
+    <button id="textChanger">Change the text</button>
     
     <div id="firstDiv">This is some test</div>
         
@@ -41,6 +43,7 @@
     <div id="circle"></div>
     
    
+    
    
     <script type="text/javascript">
         
@@ -62,15 +65,32 @@
            
        }
 
-        document.getElementById("circle").onclick=function() {
+    /*    document.getElementById("circle").onclick=function() {
            
            document.getElementById("circle").style.display="none"
         }
         
-         document.getElementById("erase").onclick=function() {
+        document.getElementById("erase").onclick=function() {
            
            document.getElementById("circle").style.display="none"
         }
+        */ 
+         
+         var divID="circle";
+        
+        var newText=document.getElementById("myInput").value;
+         
+         
+       /*  document.getElementById("circle").onclick=function() {
+           
+           document.getElementById(divID).style.display="none"
+        }
+        */
+        document.getElementById("erase").onclick=function() {
+           
+           document.getElementById("firstDiv").innerHTML=newText;
+        }
+        
         
         
     </script>
