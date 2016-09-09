@@ -22,12 +22,13 @@
 </head>
 
 <body>
-    
-    <input id="myInput" type="text" value="test" />
-    
-    <button id="textChanger">Change the text</button>
+
+<!--
+   <button id="textChanger">Change first div text</button>
     
     <div id="firstDiv">This is some test</div>
+    
+           
         
     <button id="textAppender">Append some test</button>
     
@@ -37,17 +38,20 @@
     
     <div id="mtDiv"></div>
     <br /><br />
-    
-    
+   
+   
     <button id="erase">Erase Circle</button>
     <div id="circle"></div>
+-->
+    <input id="MyInput" type="text" value="asshole" />
     
-   
+    <button id="stylesChanger">Change the text!</button>
     
+    <div id="firstDiv">This is some test</div>
    
     <script type="text/javascript">
         
-       document.getElementById("textChanger").onclick=function() {
+/*       document.getElementById("textChanger").onclick=function() {
            
            document.getElementById("firstDiv").innerHTML="This is awesome!!";
            
@@ -65,33 +69,23 @@
            
        }
 
-    /*    document.getElementById("circle").onclick=function() {
+        document.getElementById("circle").onclick=function() {
            
            document.getElementById("circle").style.display="none"
         }
         
-        document.getElementById("erase").onclick=function() {
+         document.getElementById("erase").onclick=function() {
            
            document.getElementById("circle").style.display="none"
         }
-        */ 
-         
-         var divID="circle";
+  */
+        
         
         var newText=document.getElementById("myInput").value;
-         
-         
-       /*  document.getElementById("circle").onclick=function() {
-           
-           document.getElementById(divID).style.display="none"
-        }
-        */
-        document.getElementById("erase").onclick=function() {
-           
-           document.getElementById("firstDiv").innerHTML=newText;
-        }
         
-        
+        document.getElementById("stylesChanger").onclick=function() {
+           
+        document.getElementById("firstDiv").innerHTML=newText;
         
     </script>
     
