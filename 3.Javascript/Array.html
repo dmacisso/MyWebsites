@@ -12,8 +12,7 @@
 <body>
 
 
-    <input id="myInput" type="text" value="test" />
-    
+        
     <button id="stylesChanger">Change The text!</button>
     
     <div id="firstDiv">This is some new test</div>
@@ -22,13 +21,27 @@
  <script type="text/javascript">   
      
      var myArray=new Array();
-        
+     
+     myArray[0] = "pizza";
+     myArray[1] = "chocolate";
+     
+       
+     myOtherArray=["rain","sunshine"];
+     
+     myOtherArray.push("snow");
+     
+      myOtherArray.splice(2, 0, "hail","cloudy");
+     
+     
+     
+     
+     
+     console.log(myOtherArray.length);
 
      document.getElementById("stylesChanger").onclick=function() {
          
-         newText=document.getElementById("myInput").value;
-         
-         document.getElementById("firstDiv").innerHTML= newText;
+                 
+         document.getElementById("firstDiv").innerHTML=myArray[0];
 
         }
         
