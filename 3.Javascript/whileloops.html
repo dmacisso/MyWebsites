@@ -41,9 +41,10 @@
             } else {
                 
                guesses++;
-                if (guesses > 3) {
+                if (guesses > 50) {                   //prevent infinite loop
                     
-                    alert("Too Many Guesses");
+                    alert("Too Many Guesses... Exiting while loop");
+                    exit;
                 }
             
         }
