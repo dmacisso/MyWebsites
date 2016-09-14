@@ -17,7 +17,10 @@
     border: 2px solid black;
     background-color: aquamarine;
     display: none;
+    float: left;
     }
+    
+
     
 
 </style>
@@ -29,32 +32,46 @@
 <p >Your time: <span id="time"></span></p>    
 
 <div id="box"></div>
-<div id="circle"></div>
-<div id="redbox"></div>
-    
+
+         
    
     
  <script type="text/javascript">
      
      var clickedTime; var createdTime; var reactionTime;
-     
-     var imageArray = new Arra();
-     
-     
+    
+    
          
     function makebox() {
               
         
-     var time = Math.random();           //let time be a random number (0 to 1)
+    var rnum = Math.random();           //let rnum be a random number (0 to 1)
      
-    time = 5000 * time;                  // set the random time to be from 0 to 5000.
+    var time = 5000 * rnum;             // set the random time to be from 0 to 5000.
+        
+    var loc = 600 * rnum;               //set screen location to be between 0 and 100 px
+     
+             
+    var myIndex = 5 * rnum; myIndex = Math.floor(myIndex);         
+       
+        
+    var  myColor = ["red", "yellow", "blue", "green", "brown"];
+    
+    var  myRadius = ["0px", "50px", "80px", "90px", "100px"];
+        
+        
+        
                
      setTimeout(function() {
          
-          document.getElementById("box").style.display="block";              
-        
-         createdTime=Date.now();   
-        
+          document.getElementById("box").style.display="block";               
+         
+         document.getElementById("box").style.backgroundColor = myColor[myIndex];
+         document.getElementById("box").style.borderRadius = myRadius[myIndex];  
+         document.getElementById("box").style.margin = loc + "px";
+         
+         createdTime=Date.now();
+         
      }, time);
      
      }
@@ -70,15 +87,15 @@
            document.getElementById("time").innerHTML=reactionTime;
            
          
-         this.style.display="none";
+         this.style.display="none";            
            
-        makebox();   
+        makebox();             
+           
      }
        
        makebox();
      
-     
-     
+      
         
      
     </script>
