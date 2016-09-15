@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+    <title>Learning JQuery</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <script type="text/javascript" src="jquery.min.js"></script>
+   <!-- <script type="text/javascript" src="http://code.jquery-latest.min.js"></script> -->
+    
+     <style>
+        .square {
+            background-color: red;
+            height: 200px;
+            width:   200px;
+        }
+    
+        #circle {
+            background-color: green;
+             height: 200px;
+             width:   200px;
+            border-radius: 100px;
+        }
+    
+    
+    </style>
+    
+</head>
+    
+   
+
+<body>
+    
+     <div id="circle"></div>
+    
+    <p>This is some text</p>
+    
+    <iframe src="http://cnn.com"></iframe>
+     
+   
+    
+    <script>
+    
+   
+         $("#circle").hover(function() {
+            $("iframe").attr("src", "http://www.ecowebhosting.com/");
+             
+             
+             
+           // $("#circle").click(function() {           
+           // $("p").html("The text has been changed");
+           //  alert($("p").html());
+        });
+        
+    
+    </script>
+
+   
+</body>
+</html>
