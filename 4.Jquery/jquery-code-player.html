@@ -21,6 +21,59 @@
             font-weight: bold;
             border: 1px solid darkgrey;
         } 
+        
+        #midbar {
+            border-radius: 5px;
+            background-color: darkgrey;
+            width: 200px;
+            display: inline-block;
+            height: 30px;
+            width: 190px;
+            margin-top: 3px;
+            align-self: center;
+            margin-left: 400px;            
+        }
+        
+        #html {
+            display: inline-block;
+            margin-left: 8px;
+            margin-top: 5px;
+        }
+        
+         #css {
+            display: inline-block;
+             margin-left: 8px;
+        }
+        #js {
+            display: inline-block;
+            margin-left: 8px;
+            
+        }
+         #result {
+            display: inline-block;
+             margin-left: 8px;
+        }
+        
+        #run {
+            float: right;
+            border-radius: 10px;
+            height: 30px;
+             margin-top: 5px;
+            font-weight: bold;
+            
+            
+        }
+        
+        .but {
+            border color: #000000;
+            border-radius: 10px;
+            height: 35px;
+            width: 50px;
+            margin: 3px 0 0 8px;
+            padding: 0;
+                
+            
+        }
            
     
     </style>
@@ -30,7 +83,16 @@
    
 
 <body> 
-    <div id=topbar>CodePlayer</div>
+    <div id="topbar">CodePlayer
+      <div id="midbar">    
+        <div id="html">HTML</div>
+        <div id="css">CSS</div>
+        <div id="js">JS</div>
+        <div id="result">Result</div>
+      </div>
+        <button id=run>Run</button>
+    
+    </div>
     
    
 <script>
