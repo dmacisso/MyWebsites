@@ -57,7 +57,7 @@
         #toggles {
             margin: 0 auto;
             list-style: none;
-            width: 200px; 
+            width: 172px; 
             border: 1px solid grey;
             border-radius: 3px;
             height: 27px;
@@ -100,6 +100,23 @@
             top: 10px;
                 
         }
+        
+        #cssContainer, #jsContainer {
+            
+            display: none;
+        }
+        
+        iframe {
+            
+            height: 100%;
+            position: relative;
+            left: 20px;
+            border: 1px solid black;
+        }
+        
+        .selected {
+            background-color: grey;                   
+        }
     
     </style>
     
@@ -122,10 +139,10 @@
         </div>
         
         <ul id="toggles">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JS</li>
-            <li style="border:none">Result</li>
+            <li class="toggle selected">HTML</li>
+            <li class="toggle">SS</li>
+            <li class="toggle">JS</li>
+            <li class="toggle selected" style="border:none">Result</li>
         </ul>
         
     </div>
@@ -138,7 +155,33 @@
             
             <textarea>ExampleCode</textarea>         
         
+        </div>   
+    
+            
+        <div class="codeContainer" id=cssContainer>
+            
+            <div class="codeLabel">CSS</div>
+            
+            <textarea>ExampleCode</textarea>         
+        
         </div>      
+    
+        
+        <div class="codeContainer" id=jsContainer>
+            
+            <div class="codeLabel">JS</div>
+            
+            <textarea>ExampleCode</textarea>         
+        
+        </div>      
+    
+    <div class="codeContainer" id=resultContainer>
+            
+            <div class="codeLabel">Result</div>
+            
+            <iframe></iframe>       
+        
+        </div>     
                                 
             
 </div>   
@@ -150,6 +193,13 @@
     var codeContainerHeight = windowHeight - menuBarHeight;
     
     $(".codeContainer").height(codeContainerHeight + "px");
+    
+    $(".toggle").click(function() {
+        
+        $(this).toggleClass("selected");      
+            
+        
+    });
     
    
     
