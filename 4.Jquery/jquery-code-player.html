@@ -57,7 +57,7 @@
         #toggles {
             margin: 0 auto;
             list-style: none;
-            width: 172px; 
+            width: 184px; 
             border: 1px solid grey;
             border-radius: 3px;
             height: 27px;
@@ -101,7 +101,7 @@
                 
         }
         
-        #cssContainer, #jsContainer {
+        #CSSContainer, #JSContainer {
             
             display: none;
         }
@@ -111,7 +111,7 @@
             height: 100%;
             position: relative;
             left: 20px;
-            border: 1px solid black;
+            border: 0;
         }
         
         .selected {
@@ -140,7 +140,7 @@
         
         <ul id="toggles">
             <li class="toggle selected">HTML</li>
-            <li class="toggle">SS</li>
+            <li class="toggle">CSS</li>
             <li class="toggle">JS</li>
             <li class="toggle selected" style="border:none">Result</li>
         </ul>
@@ -149,7 +149,7 @@
             
         <div class="clear"></div>
         
-        <div class="codeContainer" id=htmlContainer>
+        <div class="codeContainer" id=HTMLContainer>
             
             <div class="codeLabel">HTML</div>
             
@@ -158,7 +158,7 @@
         </div>   
     
             
-        <div class="codeContainer" id=cssContainer>
+        <div class="codeContainer" id=CSSContainer>
             
             <div class="codeLabel">CSS</div>
             
@@ -167,7 +167,7 @@
         </div>      
     
         
-        <div class="codeContainer" id=jsContainer>
+        <div class="codeContainer" id=JSContainer>
             
             <div class="codeLabel">JS</div>
             
@@ -175,7 +175,7 @@
         
         </div>      
     
-    <div class="codeContainer" id=resultContainer>
+    <div class="codeContainer" id=ResultContainer>
             
             <div class="codeLabel">Result</div>
             
@@ -196,7 +196,22 @@
     
     $(".toggle").click(function() {
         
-        $(this).toggleClass("selected");      
+        $(this).toggleClass("selected");
+        
+        var activeDiv=$(this).html();
+        
+        
+        $("#"+activeDiv+"Container").toggle();
+        
+        var showingDivs=$(".codeContainer").filter(function() {
+            
+            return($(this).css("display")!="none");
+            
+        }).length;
+        
+       var width = 100/showingDivs;
+        
+        $(".codeContainers").css("width", width+"%");
             
         
     });
