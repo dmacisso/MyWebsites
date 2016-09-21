@@ -91,6 +91,7 @@
             border-right: 1px solid grey;
             font-family: monotype;
             font-size: 90%;
+            box-sizing: border-box;
             padding: 5px;
         }
         
@@ -153,7 +154,7 @@
             
             <div class="codeLabel">HTML</div>
             
-            <textarea>ExampleCode</textarea>         
+            <textarea id="htmlCode">ExampleCode</textarea>         
         
         </div>   
     
@@ -162,7 +163,7 @@
             
             <div class="codeLabel">CSS</div>
             
-            <textarea>ExampleCode</textarea>         
+            <textarea id="cssCode">html {background-color:blue}</textarea>         
         
         </div>      
     
@@ -171,7 +172,7 @@
             
             <div class="codeLabel">JS</div>
             
-            <textarea>ExampleCode</textarea>         
+            <textarea id="jsCode">ExampleCode</textarea>         
         
         </div>      
     
@@ -211,13 +212,17 @@
         
        var width = 100/showingDivs;
         
-        $(".codeContainers").css("width", width+"%");
+        $(".codeContainers").css(width, width+"%");
             
         
     });
     
    
-    
+    $("#runButton").click(function()  {
+        
+        $("iframe").contents().find("html").html('<style>'+$("#cssCode").val()+'</style>'+$("#htmlCode").val());      
+        
+    });
         
        
         
