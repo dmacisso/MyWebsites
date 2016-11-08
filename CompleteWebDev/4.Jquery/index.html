@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+    <title>Learn Ajax</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <script type="text/javascript" src="jquery.min.js"></script>
+   <!-- <script type="text/javascript" src="http://code.jquery-latest.min.js"></script> -->
+    
+     <style>
+        .square {
+            background-color: red;
+            height: 300px;
+            width:   300px;
+            margin-top: 10px;
+        }
+    
+        #circle {
+            background-color: green;
+             height: 200px;
+             width:   200px;
+            border-radius: 100px;
+        }
+    
+    
+    </style>
+    
+</head>
+    
+   
+
+<body>
+    
+    
+    <h1>Asyncronous Javascript and XML</h1>
+ 
+    
+   
+    
+    <script>
+        
+        $.get("test.html", function(data) {
+            
+            alert(data);
+            
+        });
+    
+   
+           
+        
+        
+        
+    </script>
+
+   
+</body>
+</html>

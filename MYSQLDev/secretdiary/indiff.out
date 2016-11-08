@@ -1,0 +1,214 @@
+1,2c1
+< <?php include("login.php"); ?>
+< 
+---
+> <? include("login.php"); ?>
+9a9
+>     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+18c18
+<       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+---
+>       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+23,26c23,24
+<    
+<    		.navbar-brand{
+<    			font-size:1.8em;
+<    			
+---
+>           .navbar-brand {
+>               font-size: 1.8em;
+30,34d27
+<    			background-image:url("background.jpg");
+<    			height:400px;
+<    			width:100%;
+<    			background-size:cover;	
+<    		}
+36,38c29,32
+<    		#topRow {
+<    			margin-top:100px;
+<    			text-align:center;	
+---
+>               background-image: url("sax2.jpg");
+>               height: 400px;
+>               width: 100%;
+>               background-size: cover;
+39a34
+>           #topRow {
+41,42c36,38
+<    		#topRow h1{
+<    			font-size:300%;
+---
+>               margin-top: 100px;
+>               text-align: center;
+>           }
+43a40,41
+>           #topRow h1 {
+>               font-size: 300%;
+46,47c44,45
+<    		.bold{
+<    			font-weight:bold;
+---
+>           .bold {
+>             font-weight: bold;
+50,51c48
+<    		.marginTop{
+<    			margin-top:30px;
+---
+>           .marginTop {
+52a50
+>               margin-top: 30px;
+55,57c53,54
+<    		.center{
+<    			text-align:center;
+<    		
+---
+>           .center {
+>               text-align: center;
+61,63c58,59
+<    			margin-top:100px;
+<    			font-size:300%;
+<    			
+---
+>               margin-top: 100px;
+>                   font-size: 300%;             
+66,70c62,65
+<    		#footer{
+<    			background-color: #B0D1FB;
+<    			padding-top:70px;
+<    			width:100%;
+<    		}
+---
+>           #footer {
+>               background-color: #b0d1f8;
+>               padding-top: 70px;
+>               width: 100%;
+72,73d66
+<    		,marginBottom{
+<    			margin-bottom:30px;
+77,79c70,71
+<    		.appstoreImage{
+<    			width:250px;
+<    		
+---
+>           .marginBottom {
+>               margin-bottom: 30px;
+81d72
+<    </style>
+83c74
+<   </head>
+---
+>           .musicIcon {
+85d75
+< <body data-spy="scroll" data-target=".navbar-collapse">
+86a77,81
+>           }
+>             
+>       </style>
+>   </head>
+>  <body data-spy="scroll" data-target=".navbar-collapse">
+90d84
+<   	
+93,94c87
+<   			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+<   			
+---
+>                   <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" >
+96d88
+<   				
+98d89
+<   				
+100d90
+<   					
+106a97
+>         
+110d100
+<   			
+112,114c102
+<   				
+<   					<input type="email" name="loginemail" placeholder="Email" class="form-control" value="<?php echo addslashes($_POST['loginemail']); ?>" />
+<   																								   
+---
+>                       <input type="email" name="loginemail" placeholder="Email" class="form-control" value="<?php echo addslashes($_POST['loginemail']); ?>"/>
+116d103
+<   				
+118,120c105
+<   				
+<   					<input type="password" name="loginpassword" placeholder="Password" class="form-control" value="<?php echo addslashes($_POST['loginpassword']); ?>" />
+<   																											
+---
+>                       <input type="password" name="loginpassword" placeholder="Password" class="form-control" value="<?php echo addslashes($_POST['loginpassword']); ?>"/>
+122,124c107
+<   				
+<   				<input type="submit" name= "submit" class="btn btn-success" value="Log In">
+<   				
+---
+>                       <input type="submit" name="submit" class="btn btn-success" value="Log In" />
+129d111
+<   	</div>	
+132a115
+>       </div>
+136d118
+<   		
+138a121
+>                     
+141c124,125
+<  			 <p class="lead">Your own private diary, with you wherever you go.</p>
+---
+>                     <p class="lead">Private diary of your own</p>                              
+>                                   
+145a130
+>                          
+149d133
+<  			 	
+154c138
+<  			 		echo '<div class="alert alert-success">'.addslashes($message).'</div>';
+---
+>                         echo '<div class="alert alert-success">'.addslashes($message).'</dev>';
+157a142,143
+>                 
+>                                              
+159a146
+>                     <p class="bold marginTop"> Interested? Sign up Below! </p>
+161d147
+<  			 <p class="bold marginTop">Interested? Sign Up Below!</p>
+164d149
+<  			 
+169c154
+<   				<input type="email" name="email" class="form-control" placeholder="Your Email" value="<? echo addslashes($_POST['email']); ?>" />
+---
+>                             <input type="email" name="email" class="form-control" placeholder="Your email" value="<?php echo addslashes($_POST['email']); ?>"/>                          
+177c162,163
+<   				<input type="password" name="password" class="form-control" placeholder="Password" value="<? echo addslashes($_POST['password']); ?>" />
+---
+>                                                        
+>                             <input type="password" name="password" class="form-control" placeholder="Password" value="<?php echo addslashes($_POST['password']); ?>" />                          
+181c167
+<  			 	<input type="submit" name="submit" value="Sign Up" class="btn btn-success btn-lg marginTop"/> 
+---
+>                      <input type="submit" name="submit" value="Sign Up" class="btn btn-success btn-lg marginTop" />
+188d173
+< 		
+192,195d176
+< 
+<     
+<     
+< 
+197d177
+<     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+198a179
+>     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+200d180
+<     
+202d181
+<     
+205,207c184
+<     
+< 		$(".contentContainer").css("min-height",$(window).height());
+<     
+---
+>       $(".contentContainer").css("min-height", $(window).height());
+209d185
+<     
+211a188,189
+> 
+> 
