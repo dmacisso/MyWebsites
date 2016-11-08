@@ -197,8 +197,7 @@ if ( location.protocol.substr(0,4)  === 'file' ||
 		// Ajax doesn't work so turn it off
 		$( document ).on( "mobileinit", function() {
 			$.mobile.ajaxEnabled = false;
-
-			var message = $( '<div>' , {
+/*			var message = $( '<div>' , {
 				'class': "jqm-content",
 				style: "border:none; padding: 10px 15px; overflow: auto;",
 				'data-ajax-warning': true
@@ -209,8 +208,9 @@ if ( location.protocol.substr(0,4)  === 'file' ||
 			.append( "<p>The Ajax-based navigation used throughout the jQuery Mobile docs may need to be viewed on a web server to work in certain browsers. If you see an error message when you click a link, please try a different browser.</p>" );
 
 			$( document ).on( "pagecreate", function( event ) {
-				$( event.target ).append( message );
-			});
+            $( event.target ).append( message );
+            });
+*/
 		});
 	});
 }
