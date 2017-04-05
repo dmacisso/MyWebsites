@@ -1,7 +1,7 @@
 {
-  "name": "enigma",
+  "name": "qrgen",
   "version": "1.0.0",
-  "description": "Enigma helps you encrypt and decrypt text strings",
+  "description": "This app creates QR codes",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "qr-image": "^3.1.0"
+    "qr-image": "^3.2.0"
   }
 }
